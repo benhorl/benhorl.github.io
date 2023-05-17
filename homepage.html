@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Social - Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .links {
+            display: flex;
+            gap: 20px;
+        }
+        .links a {
+            text-decoration: none;
+            color: #000;
+            border: 1px solid #000;
+            padding: 10px 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to Food Social!</h1>
+        <p>Your favorite social media for everything food related.</p>
+        <div class="links">
+            <a href="marketing.html">Marketing</a>
+            <a href="policy.html">Policy</a>
+        </div>
+    </div>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.22.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyC9PZWpbhnZqq0pxmQKwlnpggqQIsXjt3U",
+            authDomain: "twittertutorial-66f12.firebaseapp.com",
+            projectId: "twittertutorial-66f12",
+            storageBucket: "twittertutorial-66f12.appspot.com",
+            messagingSenderId: "403925040909",
+            appId: "1:403925040909:web:e22e3fecb676544105ba44",
+            measurementId: "G-DQLDFFV6XX"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+</body>
+
+</html>
