@@ -37,28 +37,40 @@
             padding: 10px 20px;
             border-radius: 5px;
         }
-        input {
+        #link-input {
             margin-top: 10px;
             margin-bottom: 10px;
             padding: 5px;
             text-align: center;
         }
+        #copy-button {
+            margin-top: 10px;
+            padding: 5px;
+        }
     </style>
 </head>
 
 <body>
-    <div class="logo">
-        <img src="foodsociallogo.jpg" alt="Food Social Logo">
-    </div>
     <div class="container">
+        <div class="logo">
+            <img src="foodsociallogo.jpg" alt="Food Social Logo">
+        </div>
         <h1>Welcome to Food Social!</h1>
-        <input type="text" value="https://testflight.apple.com/join/jTHmmovo" readonly>
+        <input id="link-input" type="text" value="https://testflight.apple.com/join/jTHmmovo" readonly>
+        <button id="copy-button">Copy Link</button>
         <p>Your favorite social media for everything food related.</p>
         <div class="links">
             <a href="marketing.html">Marketing</a>
             <a href="policy.html">Policy</a>
         </div>
     </div>
+    <script>
+        document.getElementById('copy-button').addEventListener('click', function() {
+            var linkInput = document.getElementById('link-input');
+            linkInput.select();
+            document.execCommand('copy');
+        });
+    </script>
 </body>
 
 </html>
